@@ -5,3 +5,5 @@ export type Explorer = {
   level: number,
   available: boolean,
 };
+
+export type ExplorerHandler = (explorer: Explorer) => void;
