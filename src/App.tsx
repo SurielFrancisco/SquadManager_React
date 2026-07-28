@@ -10,7 +10,6 @@ function App() {
   const [missionMessage, setMissionMessage] = useState<string | null>(null);
 
   const handleClick = (explorer: Explorer) => {
-    // Prevent selecting unavailable explorers
     if (!explorer.available) return;
 
     setSquad((currentSquad) => {
